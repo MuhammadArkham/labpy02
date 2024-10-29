@@ -18,18 +18,14 @@ Gunakan if else dan operator ternary.
 ```python
 # Program Pemesanan Tiket Bioskop
 
-# Harga tiket
 harga_reguler = 50000
 harga_vip = 100000
 
-# Diskon untuk member
 diskon_member = 0.2
 
-# Input tipe tiket dan status member
 tipe_tiket = input("Masukkan tipe tiket (reguler/vip): ").lower()
 status_member = input("Apakah Anda memiliki kartu member? (ya/tidak): ").lower()
 
-# Menghitung harga tiket berdasarkan tipe dan status member
 if tipe_tiket == "reguler":
     harga = harga_reguler
 elif tipe_tiket == "vip":
@@ -38,7 +34,6 @@ else:
     harga = 0
     print("Tipe tiket tidak valid!")
 
-# Cek status member
 if harga != 0:
     harga_akhir = harga * (1 - diskon_member) if status_member == "ya" else harga
     print("Total harga yang harus dibayar: Rp", int(harga_akhir))
@@ -150,86 +145,109 @@ Gunakan if elif else untuk menentukan operasi aritmatika.
 # Kode Program
  ```Python
 
-angka1 = float(input("Masukkan angka pertama: "))
-angka2 = float(input("Masukkan angka kedua: "))
-operator = input("Masukkan operator (+, -, *, /): ").strip()
+# Program Kalkulator Sederhana
+while True:  
+    print("\n=== Kalkulator Sederhana ===")
+    
+    try:
+        angka1 = float(input("Masukkan angka pertama: "))
+        angka2 = float(input("Masukkan angka kedua: "))
+    except ValueError:
+        print("Input harus berupa angka. Silakan coba lagi.")
+        continue
 
-if operator == '+':
-    hasil = angka1 + angka2
-    print(f"Hasil: {angka1} + {angka2} = {hasil}")
-elif operator == '-':
-    hasil = angka1 - angka2
-    print(f"Hasil: {angka1} - {angka2} = {hasil}")
-elif operator == '*':
-    hasil = angka1 * angka2
-    print(f"Hasil: {angka1} * {angka2} = {hasil}")
-elif operator == '/':
-    if angka2 != 0:
-        hasil = angka1 / angka2
-        print(f"Hasil: {angka1} / {angka2} = {hasil}")
+    print("Operator yang tersedia: +, -, *, /")
+    operator = input("Masukkan operator: ")
+
+    if operator == "+":
+        hasil = angka1 + angka2
+        print(f"Hasil: {angka1} + {angka2} = {hasil}")
+    elif operator == "-":
+        hasil = angka1 - angka2
+        print(f"Hasil: {angka1} - {angka2} = {hasil}")
+    elif operator == "*":
+        hasil = angka1 * angka2
+        print(f"Hasil: {angka1} * {angka2} = {hasil}")
+    elif operator == "/":
+        if angka2 != 0:
+            hasil = angka1 / angka2
+            print(f"Hasil: {angka1} / {angka2} = {hasil}")
+        else:
+            print("Error: Tidak bisa membagi dengan nol.")
     else:
-        print("Error: Pembagian dengan nol tidak diperbolehkan!")
-else:
-    print("Operator tidak valid! Silakan masukkan +, -, *, atau /.") 
+        print("Operator tidak valid. Silakan coba lagi.")
+
+    ulang = input("Ingin menghitung lagi? (y/n): ").lower()
+    if ulang != 'y':
+        print("Terima kasih telah menggunakan kalkulator!")
+        break
 ```
 # Hasil kode Program
 ![Foto](https://github.com/MuhammadArkham/Foto/blob/main/Screenshot%202024-10-29%20235253.png?raw=true)
 
 # Penjelasan dan langkah-langkah kode program
 
-# Meminta input angka pertama dari pengguna
+# while True
+
 
  ```Python
 
+while True:
+```
+ ini digunakan untuk membuat looping yang akan menjalankan program secara berulang.
+
+# Input Angka Pertama dan Kedua
+
+  ```Python
 angka1 = float(input("Masukkan angka pertama: "))
-```
-A. Fungsi input() digunakan untuk meminta input dari pengguna.
-
-B. Fungsi float() digunakan untuk mengkonversi input string menjadi angka floating-point.
-
-# Meminta input angka kedua dari pengguna
-
-  ```Python
 angka2 = float(input("Masukkan angka kedua: "))
-) 
+
 ```
-A. Fungsi input() digunakan untuk meminta input dari pengguna.
+Untuk meminta input dua angka dari pengguna. 
 
-B. Fungsi float() digunakan untuk mengkonversi input string menjadi angka floating-point.
+Fungsi float() digunakan agar bisa menerima angka dengan desimal.
 
-# Meminta input operator dari pengguna
+# If-Elif-Else
 
   ```Python
 
-operator = input("Masukkan operator (+, -, *, /): ").strip()
-```
-Fungsi strip() digunakan untuk menghilangkan spasi di awal/akhir string.
-
-# Menentukan operasi aritmatika dan menghitung hasil
-
-  ```Python
-if operator == '+':
+if operator == "+":
     hasil = angka1 + angka2
-    print(f"Hasil: {angka1} + {angka2} = {hasil}")
-elif operator == '-':
+elif operator == "-":
     hasil = angka1 - angka2
-    print(f"Hasil: {angka1} - {angka2} = {hasil}")
-elif operator == '*':
+elif operator == "*":
     hasil = angka1 * angka2
-    print(f"Hasil: {angka1} * {angka2} = {hasil}")
-elif operator == '/':
+elif operator == "/":
     if angka2 != 0:
         hasil = angka1 / angka2
-        print(f"Hasil: {angka1} / {angka2} = {hasil}")
     else:
-        print("Error: Pembagian dengan nol tidak diperbolehkan!")
+        print("Error: Tidak bisa membagi dengan nol.")
 else:
-    print("Operator tidak valid! Silakan masukkan +, -, *, atau /.")
+    print("Operator tidak valid. Silakan coba lagi.")
+
 ```
-Program menggunakan struktur kontrol if-elif-else untuk menentukan operasi yang akan dilakukan berdasarkan operator yang dimasukkan.
-A.Jika operator adalah '+', program melakukan operasi penjumlahan dan mencetak hasil.
-B.Jika operator adalah '-', program melakukan operasi pengurangan dan mencetak hasil.
-C.Jika operator adalah '*', program melakukan operasi perkalian dan mencetak hasil.
-D.Jika operator adalah '/', program memeriksa apakah angka kedua (pembagi) adalah 0. Jika ya, maka menampilkan pesan error. Jika tidak, maka melakukan operasi pembagian dan mencetak hasil.
-E.Jika operator tidak valid, maka program menampilkan pesan error.
+# If
+
+Jika operator yang dimasukkan user adalah +, maka program akan melakukan penjumlahan antara dua angka.
+
+# elif 
+
+Setiap elif memeriksa kondisi lain jika kondisi sebelumnya tidak terpenuhi. Program akan memeriksa operator dan melakukan operasi sesuai dengan input pengguna.
+
+# else
+
+Jika input operator tidak sesuai dengan salah satu kondisi yang telah ditentukan (+, -, *, atau /), maka program akan menjalankan blok else dan menampilkan pesan bahwa operator tersebut tidak valid.
+
+# Pengulangan Program
+
+  ```Python
+
+ulang = input("Ingin menghitung lagi? (y/n): ").lower()
+if ulang != 'y':
+    print("Terima kasih telah menggunakan kalkulator!")
+    break
+```
+Setelah perhitungan selesai, program menanyakan apakah pengguna ingin melanjutkan. Jika jawaban bukan 'y', program akan berhenti dengan menggunakan break.
+
+
 
