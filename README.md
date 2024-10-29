@@ -249,5 +249,7 @@ if ulang != 'y':
 ```
 Setelah perhitungan selesai, program menanyakan apakah pengguna ingin melanjutkan. Jika jawaban bukan 'y', program akan berhenti dengan menggunakan break.
 
+# Gambar Flowchart
+![Foto](https://github.com/MuhammadArkham/Foto/blob/main/kasus2%20(2).png?raw=true)
 
 
