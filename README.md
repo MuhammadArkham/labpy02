@@ -37,4 +37,6 @@ if harga != 0:
 
 ```
 # Eksekusi program
-![Foto]
+![Foto](https://github.com/MuhammadArkham/Foto/blob/main/Screenshot%202024-10-29%20193632.png?raw=true)
+
+# Penjelasan kode program
