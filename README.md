@@ -36,7 +36,7 @@ if harga != 0:
     print("Total harga yang harus dibayar: Rp", int(harga_akhir))
 
 ```
-# Eksekusi program
+# Hasil Code Program
 ![Foto](https://github.com/MuhammadArkham/Foto/blob/main/Screenshot%202024-10-29%20193632.png?raw=true)
 
 # Penjelasan kode program
