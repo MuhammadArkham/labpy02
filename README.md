@@ -173,7 +173,7 @@ else:
     print("Operator tidak valid! Silakan masukkan +, -, *, atau /.") 
 ```
 # Hasil kode Program
-![Foto](https://github.com/MuhammadArkham/Foto/blob/main/Screenshot%202024-10-29%20210046.png?raw=true)
+![Foto](https://github.com/MuhammadArkham/Foto/blob/main/Screenshot%202024-10-29%20235253.png?raw=true)
 
 # Penjelasan dan langkah-langkah kode program
 
