@@ -128,4 +128,5 @@ Tidak ada diskon
 Harga akhir: Rp 100.000
 
 # Gambar Flowchart
+![Foto](https://github.com/MuhammadArkham/Foto/blob/main/flowchart%20kasus%201.drawio.png?raw=true)
 
