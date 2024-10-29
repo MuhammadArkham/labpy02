@@ -39,4 +39,12 @@ if harga != 0:
 # Hasil Code Program
 ![Foto](https://github.com/MuhammadArkham/Foto/blob/main/Screenshot%202024-10-29%20193632.png?raw=true)
 
-# Penjelasan kode program
+# Penjelasan dan langkah-langkah kode program
+
+```Python
+Menentukan Harga Dasar
+
+Program menetapkan harga dasar untuk dua jenis tiket:
+
+Tiket Reguler: Rp 50.000
+Tiket VIP: Rp 100.000
