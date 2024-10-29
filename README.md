@@ -150,78 +150,86 @@ Gunakan if elif else untuk menentukan operasi aritmatika.
 # Kode Program
  ```Python
 
-# Meminta input angka dan operator dari user
 angka1 = float(input("Masukkan angka pertama: "))
-operator = input("Masukkan operator (+, -, *, /): ").strip()
 angka2 = float(input("Masukkan angka kedua: "))
+operator = input("Masukkan operator (+, -, *, /): ").strip()
 
-# Menentukan operasi aritmatika dan menghitung hasil
 if operator == '+':
     hasil = angka1 + angka2
+    print(f"Hasil: {angka1} + {angka2} = {hasil}")
 elif operator == '-':
     hasil = angka1 - angka2
+    print(f"Hasil: {angka1} - {angka2} = {hasil}")
 elif operator == '*':
     hasil = angka1 * angka2
+    print(f"Hasil: {angka1} * {angka2} = {hasil}")
 elif operator == '/':
     if angka2 != 0:
         hasil = angka1 / angka2
+        print(f"Hasil: {angka1} / {angka2} = {hasil}")
     else:
-        hasil = "Error: Pembagian dengan nol tidak valid!"
+        print("Error: Pembagian dengan nol tidak diperbolehkan!")
 else:
-    hasil = "Operator tidak valid!"
-
-# Menampilkan hasil perhitungan
-print(f"Hasil: {hasil}")
+    print("Operator tidak valid! Silakan masukkan +, -, *, atau /.") 
 ```
 # Hasil kode Program
 ![Foto](https://github.com/MuhammadArkham/Foto/blob/main/Screenshot%202024-10-29%20210046.png?raw=true)
 
 # Penjelasan dan langkah-langkah kode program
 
-# Meminta input angka dan operator dari user
+# Meminta input angka pertama dari pengguna
 
  ```Python
 
 angka1 = float(input("Masukkan angka pertama: "))
-operator = input("Masukkan operator (+, -, *, /): ").strip()
-angka2 = float(input("Masukkan angka kedua: "))
 ```
 A. Fungsi input() digunakan untuk meminta input dari pengguna.
 
 B. Fungsi float() digunakan untuk mengkonversi input string menjadi angka floating-point.
 
-C. Fungsi strip() digunakan untuk menghilangkan spasi di awal/akhir string.
+# Meminta input angka kedua dari pengguna
+
+  ```Python
+angka2 = float(input("Masukkan angka kedua: "))
+) 
+```
+A. Fungsi input() digunakan untuk meminta input dari pengguna.
+
+B. Fungsi float() digunakan untuk mengkonversi input string menjadi angka floating-point.
+
+# Meminta input operator dari pengguna
+
+  ```Python
+
+operator = input("Masukkan operator (+, -, *, /): ").strip()
+```
+Fungsi strip() digunakan untuk menghilangkan spasi di awal/akhir string.
 
 # Menentukan operasi aritmatika dan menghitung hasil
 
   ```Python
-
 if operator == '+':
     hasil = angka1 + angka2
+    print(f"Hasil: {angka1} + {angka2} = {hasil}")
 elif operator == '-':
     hasil = angka1 - angka2
+    print(f"Hasil: {angka1} - {angka2} = {hasil}")
 elif operator == '*':
     hasil = angka1 * angka2
+    print(f"Hasil: {angka1} * {angka2} = {hasil}")
 elif operator == '/':
     if angka2 != 0:
         hasil = angka1 / angka2
+        print(f"Hasil: {angka1} / {angka2} = {hasil}")
     else:
-        hasil = "Error: Pembagian dengan nol tidak valid!"
+        print("Error: Pembagian dengan nol tidak diperbolehkan!")
 else:
-    hasil = "Operator tidak valid!"
+    print("Operator tidak valid! Silakan masukkan +, -, *, atau /.")
 ```
-A. Program menggunakan struktur kontrol if-elif-else untuk menentukan operasi yang akan dilakukan berdasarkan operator yang dimasukkan.
-
-B. Jika operator adalah '+', '-', '*', maka program melakukan operasi aritmatika yang sesuai.
-
-C. Jika operator adalah '/', program memeriksa apakah angka kedua (pembagi) adalah 0. Jika ya, maka menampilkan pesan error. Jika tidak, maka melakukan operasi pembagian.
-   Jika operator tidak valid, maka variabel hasil diisi dengan pesan error.
-
-# Menampilkan hasil perhitungan
-
-  ```Python
-
-print(f"Hasil: {hasil}")
-```
-Program menggunakan f-string untuk mencetak hasil perhitungan.
+Program menggunakan struktur kontrol if-elif-else untuk menentukan operasi yang akan dilakukan berdasarkan operator yang dimasukkan.
+A.Jika operator adalah '+', program melakukan operasi penjumlahan dan mencetak hasil.
+B.Jika operator adalah '-', program melakukan operasi pengurangan dan mencetak hasil.
+C.Jika operator adalah '*', program melakukan operasi perkalian dan mencetak hasil.
+D.Jika operator adalah '/', program memeriksa apakah angka kedua (pembagi) adalah 0. Jika ya, maka menampilkan pesan error. Jika tidak, maka melakukan operasi pembagian dan mencetak hasil.
+E.Jika operator tidak valid, maka program menampilkan pesan error.
 
