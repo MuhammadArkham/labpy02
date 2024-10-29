@@ -14,7 +14,7 @@ member dari user, lalu menghitung total harga yang harus dibayar.
 
 Petunjuk:
 Gunakan if else dan operator ternary.
-# code program
+# Kode Program
 ```python
 # Program Pemesanan Tiket Bioskop
 
@@ -44,10 +44,10 @@ if harga != 0:
     print("Total harga yang harus dibayar: Rp", int(harga_akhir))
 
 ```
-# Hasil Code Program
+# Hasil kode Program
 ![Foto](https://github.com/MuhammadArkham/Foto/blob/main/Screenshot%202024-10-29%20193632.png?raw=true)
 
-# Penjelasan dan langkah-langkah kode program
+# Penjelasan dan langkah-langkah kode Program
 
 # Menentukan Harga Dasar
    
@@ -116,20 +116,19 @@ Program menghitung harga akhir dengan ketentuan:
 Jika harga tidak 0 (tipe tiket valid), lanjut ke pengecekan status member
 Jika memiliki kartu member: harga dikurangi 20%
 Jika tidak memiliki kartu member: harga tetap
-Hasil akhir ditampilkan dalam format Rupiah
+Hasil akhir ditampilkan dalam format Rupiah.
 
 
 
 Contoh Perhitungan:
 
-1. Tiket Reguler dengan Member:
+1.Tiket Reguler dengan Member:
 
 Harga dasar: Rp 50.000
 Diskon: 20% × Rp 50.000 = Rp 10.000
 Harga akhir: Rp 40.000
 
-
-2. Tiket VIP tanpa Member:
+2.Tiket VIP tanpa Member:
 
 Harga dasar: Rp 100.000
 Tidak ada diskon
@@ -148,8 +147,9 @@ member dari user, lalu menghitung total harga yang harus dibayar.
 Petunjuk:
 Gunakan if elif else untuk menentukan operasi aritmatika.
 
-# Code Program
+# Kode Program
  ```Python
+
 # Meminta input angka dan operator dari user
 angka1 = float(input("Masukkan angka pertama: "))
 operator = input("Masukkan operator (+, -, *, /): ").strip()
@@ -173,7 +173,55 @@ else:
 # Menampilkan hasil perhitungan
 print(f"Hasil: {hasil}")
 ```
-# Hasil Code Program
-![Foto](
+# Hasil kode Program
+![Foto](https://github.com/MuhammadArkham/Foto/blob/main/Screenshot%202024-10-29%20210046.png?raw=true)
 
+# Penjelasan dan langkah-langkah kode program
+
+# Meminta input angka dan operator dari user
+
+ ```Python
+
+angka1 = float(input("Masukkan angka pertama: "))
+operator = input("Masukkan operator (+, -, *, /): ").strip()
+angka2 = float(input("Masukkan angka kedua: "))
+```
+A. Fungsi input() digunakan untuk meminta input dari pengguna.
+
+B. Fungsi float() digunakan untuk mengkonversi input string menjadi angka floating-point.
+
+C. Fungsi strip() digunakan untuk menghilangkan spasi di awal/akhir string.
+
+# Menentukan operasi aritmatika dan menghitung hasil
+
+  ```Python
+
+if operator == '+':
+    hasil = angka1 + angka2
+elif operator == '-':
+    hasil = angka1 - angka2
+elif operator == '*':
+    hasil = angka1 * angka2
+elif operator == '/':
+    if angka2 != 0:
+        hasil = angka1 / angka2
+    else:
+        hasil = "Error: Pembagian dengan nol tidak valid!"
+else:
+    hasil = "Operator tidak valid!"
+```
+A. Program menggunakan struktur kontrol if-elif-else untuk menentukan operasi yang akan dilakukan berdasarkan operator yang dimasukkan.
+
+B. Jika operator adalah '+', '-', '*', maka program melakukan operasi aritmatika yang sesuai.
+
+C. Jika operator adalah '/', program memeriksa apakah angka kedua (pembagi) adalah 0. Jika ya, maka menampilkan pesan error. Jika tidak, maka melakukan operasi pembagian.
+   Jika operator tidak valid, maka variabel hasil diisi dengan pesan error.
+
+# Menampilkan hasil perhitungan
+
+  ```Python
+
+print(f"Hasil: {hasil}")
+```
+Program menggunakan f-string untuk mencetak hasil perhitungan.
 
