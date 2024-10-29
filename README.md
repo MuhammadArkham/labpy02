@@ -183,7 +183,7 @@ while True:
         break
 ```
 # Hasil kode Program
-![Foto](https://github.com/MuhammadArkham/Foto/blob/main/Screenshot%202024-10-29%20235253.png?raw=true)
+![Foto](https://github.com/MuhammadArkham/Foto/blob/main/Screenshot%202024-10-30%20000828.png?raw=true)
 
 # Penjelasan dan langkah-langkah kode program
 
