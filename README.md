@@ -6,6 +6,14 @@ Bahasa pemrograman
 
 312410545
 
+#  Kasus 1: Program Pemesanan Tiket Bioskop
+Buat program yang menghitung harga tiket bioskop. Tiket reguler berharga Rp50.000,
+sedangkan tiket VIP berharga Rp100.000. Jika user memiliki kartu member, mereka
+mendapatkan diskon 20% dari harga tiket. Program ini harus meminta tipe tiket dan status
+member dari user, lalu menghitung total harga yang harus dibayar.
+
+Petunjuk:
+Gunakan if else dan operator ternary.
 # code program
 ```python
 # Program Pemesanan Tiket Bioskop
@@ -129,4 +137,43 @@ Harga akhir: Rp 100.000
 
 # Gambar Flowchart
 ![Foto](https://github.com/MuhammadArkham/Foto/blob/main/KASUS1.drawio.png?raw=true)
+
+
+# Kasus 2: Program Kalkulator Sederhana
+Buat program yang menghitung harga tiket bioskop. Tiket reguler berharga Rp50.000,
+sedangkan tiket VIP berharga Rp100.000. Jika user memiliki kartu member, mereka
+mendapatkan diskon 20% dari harga tiket. Program ini harus meminta tipe tiket dan status
+member dari user, lalu menghitung total harga yang harus dibayar.
+
+Petunjuk:
+Gunakan if elif else untuk menentukan operasi aritmatika.
+
+# Code Program
+ ```Python
+# Meminta input angka dan operator dari user
+angka1 = float(input("Masukkan angka pertama: "))
+operator = input("Masukkan operator (+, -, *, /): ").strip()
+angka2 = float(input("Masukkan angka kedua: "))
+
+# Menentukan operasi aritmatika dan menghitung hasil
+if operator == '+':
+    hasil = angka1 + angka2
+elif operator == '-':
+    hasil = angka1 - angka2
+elif operator == '*':
+    hasil = angka1 * angka2
+elif operator == '/':
+    if angka2 != 0:
+        hasil = angka1 / angka2
+    else:
+        hasil = "Error: Pembagian dengan nol tidak valid!"
+else:
+    hasil = "Operator tidak valid!"
+
+# Menampilkan hasil perhitungan
+print(f"Hasil: {hasil}")
+```
+# Hasil Code Program
+![Foto](
+
 
