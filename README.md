@@ -130,7 +130,7 @@ Tidak ada diskon
 Harga akhir: Rp 100.000
 
 ## Gambar Flowchart
-![Foto](https://github.com/MuhammadArkham/Foto/blob/main/KASUS1.drawio.png?raw=true)
+![Foto](https://github.com/MuhammadArkham/Foto/blob/main/Kasus1.drawio%20(1).png?raw=true)
 
 
 # Kasus 2: Program Kalkulator Sederhana
