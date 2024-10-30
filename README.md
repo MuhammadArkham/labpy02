@@ -14,7 +14,7 @@ member dari user, lalu menghitung total harga yang harus dibayar.
 
 Petunjuk:
 Gunakan if else dan operator ternary.
-# Kode Program
+## Kode Program
 ```python
 # Program Pemesanan Tiket Bioskop
 
@@ -39,12 +39,12 @@ if harga != 0:
     print("Total harga yang harus dibayar: Rp", int(harga_akhir))
 
 ```
-# Hasil kode Program
+## Hasil kode Program
 ![Foto](https://github.com/MuhammadArkham/Foto/blob/main/Screenshot%202024-10-29%20193632.png?raw=true)
 
-# Penjelasan dan langkah-langkah kode Program
+## Penjelasan dan langkah-langkah kode Program
 
-# Menentukan Harga Dasar
+### Menentukan Harga Dasar
    
 ```Python
 
@@ -57,7 +57,7 @@ harga_vip = 100000     # Harga tiket VIP
 
  Tiket VIP: Rp 100.000
 
-# Menentukan Besaran Diskon
+### Menentukan Besaran Diskon
 
 ```Python
 
@@ -65,7 +65,7 @@ diskon_member = 0.2  # Diskon 20% untuk member
 ```
  Program menetapkan besaran diskon untuk pemegang kartu member sebesar 20% (0.2)
 
-# Input Data Pelanggan
+### Input Data Pelanggan
 
    ```Python
    
@@ -80,7 +80,7 @@ A. Program meminta input dari pengguna:
 
 B. Fungsi .lower() digunakan untuk mengubah input menjadi huruf kecil agar memudahkan pengecekan.
 
-# Menentukan Harga Berdasarkan Tipe Tiket
+### Menentukan Harga Berdasarkan Tipe Tiket
 
  ```Python
 
@@ -98,7 +98,7 @@ Jika "reguler": harga = Rp 50.000
 Jika "vip": harga = Rp 100.000
 Jika input tidak valid: harga = 0 dan menampilkan pesan error.
  
-# Menghitung Harga Akhir
+### Menghitung Harga Akhir
 
  ```Python
 
@@ -129,7 +129,7 @@ Harga dasar: Rp 100.000
 Tidak ada diskon
 Harga akhir: Rp 100.000
 
-# Gambar Flowchart
+## Gambar Flowchart
 ![Foto](https://github.com/MuhammadArkham/Foto/blob/main/KASUS1.drawio.png?raw=true)
 
 
@@ -142,7 +142,7 @@ member dari user, lalu menghitung total harga yang harus dibayar.
 Petunjuk:
 Gunakan if elif else untuk menentukan operasi aritmatika.
 
-# Kode Program
+## Kode Program
  ```Python
 
 # Program Kalkulator Sederhana
@@ -182,12 +182,12 @@ while True:
         print("Terima kasih telah menggunakan kalkulator!")
         break
 ```
-# Hasil kode Program
+## Hasil kode Program
 ![Foto](https://github.com/MuhammadArkham/Foto/blob/main/Screenshot%202024-10-30%20000828.png?raw=true)
 
-# Penjelasan dan langkah-langkah kode program
+## Penjelasan dan langkah-langkah kode program
 
-# while True
+### while True
 
 
  ```Python
@@ -196,7 +196,7 @@ while True:
 ```
  ini digunakan untuk membuat looping yang akan menjalankan program secara berulang.
 
-# Input Angka Pertama dan Kedua
+### Input Angka Pertama dan Kedua
 
   ```Python
 angka1 = float(input("Masukkan angka pertama: "))
@@ -207,7 +207,7 @@ Untuk meminta input dua angka dari pengguna.
 
 Fungsi float() digunakan agar bisa menerima angka dengan desimal.
 
-# If-Elif-Else
+### If-Elif-Else
 
   ```Python
 
@@ -226,19 +226,19 @@ else:
     print("Operator tidak valid. Silakan coba lagi.")
 
 ```
-# If
+### If
 
 Jika operator yang dimasukkan user adalah +, maka program akan melakukan penjumlahan antara dua angka.
 
-# elif 
+### elif 
 
 Setiap elif memeriksa kondisi lain jika kondisi sebelumnya tidak terpenuhi. Program akan memeriksa operator dan melakukan operasi sesuai dengan input pengguna.
 
-# else
+### else
 
 Jika input operator tidak sesuai dengan salah satu kondisi yang telah ditentukan (+, -, *, atau /), maka program akan menjalankan blok else dan menampilkan pesan bahwa operator tersebut tidak valid.
 
-# Pengulangan Program
+### Pengulangan Program
 
   ```Python
 
@@ -249,7 +249,7 @@ if ulang != 'y':
 ```
 Setelah perhitungan selesai, program menanyakan apakah pengguna ingin melanjutkan. Jika jawaban bukan 'y', program akan berhenti dengan menggunakan break.
 
-# Gambar Flowchart
+## Gambar Flowchart
 ![Foto](https://github.com/MuhammadArkham/Foto/blob/main/kasus2%20(2).png?raw=true)
 
 
